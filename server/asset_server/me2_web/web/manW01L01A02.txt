@@ -1,18 +1,26 @@
 [
-    #src: "W01L01BASE.w3d", 
+    #src: "W01L01BASE.w3d",
+    #del: [],
     #lights: [
-        "directionalLight_fill1",
-        "directionalLight_fill2",
-        "directionalLight_fill3",
-        "directionalLight_fill4",
-        "directionalLight_under",
-        "directionalLight_main"
+        "LIGHTS_W01L01BASE"
+    ],
+    #zones: [
+        "ZONES_W01L01BASE",
+        "ZONES_W01L01BASE|A01Z01",
+        "ZONES_W01L01BASE|A01Z02",
+        "ZONES_W01L01BASE|A02Z01",
+        "ZONES_W01L01BASE|A02Z02",
+        "ZONES_W01L01BASE|A03Z01",
+        "ZONES_W01L01BASE|A03Z02",
+        "ZONES_W01L01BASE|A04Z01",
+        "ZONES_W01L01BASE|A04Z02",
+        "ZONES_W01L01BASE|A05Z01",
+        "ZONES_W01L01BASE|A05Z02",
+        "ZONES_W01L01BASE|A05Z03"
     ],
     #Z01: [
-        #ROOT: "scene", 
-        // Makes things visible to the camera
+        #ROOT: "scene",
         #add: [
-            // W01L01A02Z01.w3d models
             "|A02Z01",
             "WALLS_A02Z01",
             "mountainCavern1",
@@ -36,13 +44,12 @@
             "directionalLight_fill4",
             "directionalLight_main",
             "directionalLight_under"
-        ], 
-        #rem: [], 
-        #floors: [], 
-        #vfloors: [], 
-        #vfly: [], 
+        ],
+        #rem: [],
+        #floors: [],
+        #vfloors: [],
+        #vfly: [],
         #walls: [
-            // W01L01A02Z01.w3d models
             "WALLS_A02Z01",
             "WALLS_A02Z01|mountainCavern2",
             "WALLS_A02Z01|mountainCavern3",
@@ -54,17 +61,14 @@
             "WALLS_A02Z01|mountainGrotto_tunnelWalls_entrance",
             "WALLS_A02Z01|mountainGrotto_tunnelWallsUnderwater_entrance"
         ],
-        #walls_nc: [], 
+        #walls_nc: [],
         #ext: [
-            "W01L01A02Z01.w3d",
-            "W01L01A02Z02.w3d"
+            "W01L01A02Z01.w3d"
         ]
     ],
     #Z02: [
-        #ROOT: "scene", 
-        // Makes things visible to the camera
+        #ROOT: "scene",
         #add: [
-            // W01L01A02Z02.w3d models
             "|A02Z02",
             "WALLS_A02Z02",
             "WALLS_A02Z02|mountain_tunnelWalls_entrance",
@@ -103,34 +107,32 @@
             "directionalLight_fill4",
             "directionalLight_main",
             "directionalLight_under"
-        ], 
-        #rem: [], 
+        ],
+        #rem: [],
         #floors: [
-            // W01L01A02Z02.w3d models
             "FLOORS_SLIP_RAMPPARK_A02Z02",
             "FLOORS_SLIP_RAMPPARK_A02Z02|miniJumps_rampFloors",
             "FLOORS_SLIP_RAMPPARK_A02Z02|track_ramps"
-        ], 
-        #vfloors: [], 
-        #vfly: [], 
+        ],
+        #vfloors: [],
+        #vfly: [],
         #walls: [
-            // W01L01A02Z02.w3d models
             "WALLS_A02Z02",
             "WALLS_A02Z02|mountain_tunnelWalls_entrance",
             "WALLS_A02Z02|mountain_tunnelWallsUnderwater_entrance",
             "WALLS_A02Z02|checkpoint2_racetrackWalls_entrance",
             "WALLS_A02Z02|portal_walls",
-            "WALLS_NONCAMERA_A02Z02",
-            "WALLS_NONCAMERA_A02Z02|checkpoint2_racetrackWalls_entranceInfinityCheat",
-            "WALLS_NONCAMERA_A02Z02|buoys",
             "WALLS_RAMPPARK_A02Z02",
             "WALLS_RAMPPARK_A02Z02|miniJumps_rampWalls",
             "WALLS_RAMPPARK_A02Z02|track_walls",
             "WALLS_RAMPPARK_A02Z02|track_posts"
-        ], 
-        #walls_nc: [], 
+        ],
+        #walls_nc: [
+            "WALLS_NONCAMERA_A02Z02",
+            "WALLS_NONCAMERA_A02Z02|checkpoint2_racetrackWalls_entranceInfinityCheat",
+            "WALLS_NONCAMERA_A02Z02|buoys"
+        ],
         #ext: [
-            "W01L01A02Z01.w3d",
             "W01L01A02Z02.w3d"
         ]
     ]

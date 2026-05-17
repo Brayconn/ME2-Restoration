@@ -1,18 +1,27 @@
 [
-    #src: "W01L02BASE.w3d", 
+    #src: "W01L02BASE.w3d",
+    #del: [],
     #lights: [
-        "directionalLight_fill1",
-        "directionalLight_fill2",
-        "directionalLight_fill3",
-        "directionalLight_fill4",
-        "directionalLight_under",
-        "directionalLight_main"
+        "LIGHTS_W01L02BASE"
+    ],
+    #zones: [
+        "ZONES_W01L02BASE",
+        "ZONES_W01L02BASE|A01Z01",
+        "ZONES_W01L02BASE|A01Z02",
+        "ZONES_W01L02BASE|A02Z01",
+        "ZONES_W01L02BASE|A02Z02",
+        "ZONES_W01L02BASE|A02Z03",
+        "ZONES_W01L02BASE|A03Z01",
+        "ZONES_W01L02BASE|A03Z02",
+        "ZONES_W01L02BASE|A03Z03",
+        "ZONES_W01L02BASE|A04Z01",
+        "ZONES_W01L02BASE|A04Z02",
+        "ZONES_W01L02BASE|A04Z03",
+        "ZONES_W01L02BASE|A04Z04"
     ],
     #Z01: [
-        #ROOT: "scene", 
-        // Makes things visible to the camera
+        #ROOT: "scene",
         #add: [
-            // W01L02A01Z01.w3d models
             "directionalLight_under",
             "directionalLight_main",
             "directionalLight_fill4",
@@ -22,7 +31,6 @@
             "scene",
             "A01Z01_diamond_Shape30",
             "A01Z01_diamond_30",
-            "DIAMONDS_A01Z01",
             "A01Z01_diamond_Shape29",
             "A01Z01_diamond_29",
             "A01Z01_diamond_Shape23",
@@ -65,45 +73,43 @@
             "A01Z01_diamond_2",
             "A01Z01_diamond_Shape1",
             "A01Z01_diamond_1",
-            "|A01Z01",
+            "DIAMONDS_A01Z01",
             "skyMaze_tower_BoundariesShape",
             "skyMaze_tower_Boundaries",
             "WALLS_NONCAMERA_A01Z01",
             "skyMaze_trim",
-            "WALLS_A01Z01",
             "skyMaze_tower_steps_railings_stone",
             "skyMaze_tower_walls_reverseBoundariesShape",
             "skyMaze_tower_walls_reverseBoundaries",
+            "WALLS_A01Z01",
             "skyMaze_tower_steps_stone",
             "STEPS_A01Z01",
             "skyMaze_castle_steps_rampsShape",
             "skyMaze_castle_steps_ramps",
-            "FLOORS_A01Z01",
             "skyMaze_castle_floors_wood",
-            "skyMaze_elevator_floor"
-        ], 
-        #rem: [], 
+            "skyMaze_elevator_floor",
+            "FLOORS_A01Z01",
+            "|A01Z01"
+        ],
+        #rem: [],
         #floors: [
             "FLOORS_A01Z01"
-        ], 
-        #vfloors: [], 
-        #vfly: [], 
+        ],
+        #vfloors: [],
+        #vfly: [],
         #walls: [
-            // W01L02A01Z01.w3d models
-            "WALLS_NONCAMERA_A01Z01",
             "WALLS_A01Z01"
         ],
-        #walls_nc: [], 
+        #walls_nc: [
+            "WALLS_NONCAMERA_A01Z01"
+        ],
         #ext: [
-            "W01L02A01Z01.w3d",
-            "W01L02A01Z02.w3d"
+            "W01L02A01Z01.w3d"
         ]
     ],
     #Z02: [
-        #ROOT: "scene", 
-        // Makes things visible to the camera
+        #ROOT: "scene",
         #add: [
-            // W01L02A01Z02.w3d models
             "|A01Z02",
             "WALLS__A01Z02",
             "skyMaze_blockerRailings_posts",
@@ -251,19 +257,18 @@
             "directionalLight_fill4",
             "directionalLight_main",
             "directionalLight_under"
-        ], 
-        #rem: [], 
-        #floors: [], 
-        #vfloors: [], 
-        #vfly: [], 
+        ],
+        #rem: [],
+        #floors: [],
+        #vfloors: [],
+        #vfly: [],
         #walls: [
-            // W01L02A01Z02.w3d models
-            "WALLS__A01Z02",
+            "WALLS__A01Z02"
+        ],
+        #walls_nc: [
             "WALLS_NONCAMERA_A01Z02"
-        ], 
-        #walls_nc: [], 
+        ],
         #ext: [
-            "W01L02A01Z01.w3d",
             "W01L02A01Z02.w3d"
         ]
     ]

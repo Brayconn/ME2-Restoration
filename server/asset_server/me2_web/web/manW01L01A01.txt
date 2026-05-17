@@ -1,9 +1,26 @@
 [
-    #src: "W01L01BASE.w3d", 
+    #src: "W01L01BASE.w3d",
+    #del: [],
+    #lights: [
+        "LIGHTS_W01L01BASE"
+    ],
+    #zones: [
+        "ZONES_W01L01BASE",
+        "ZONES_W01L01BASE|A01Z01",
+        "ZONES_W01L01BASE|A01Z02",
+        "ZONES_W01L01BASE|A02Z01",
+        "ZONES_W01L01BASE|A02Z02",
+        "ZONES_W01L01BASE|A03Z01",
+        "ZONES_W01L01BASE|A03Z02",
+        "ZONES_W01L01BASE|A04Z01",
+        "ZONES_W01L01BASE|A04Z02",
+        "ZONES_W01L01BASE|A05Z01",
+        "ZONES_W01L01BASE|A05Z02",
+        "ZONES_W01L01BASE|A05Z03"
+    ],
     #Z01: [
-        #ROOT: "scene", 
+        #ROOT: "scene",
         #add: [
-            // W01L01A01Z01.w3d models
             "|A01Z01",
             "FLOORS_A01Z01",
             "FLOORS_A01Z01|mountain_floors_approach",
@@ -102,9 +119,41 @@
             "directionalLight_fill3",
             "directionalLight_fill4",
             "directionalLight_main",
-            "directionalLight_under",
-
-            // W01L01A01Z02.w3d models
+            "directionalLight_under"
+        ],
+        #rem: [],
+        #floors: [
+            "FLOORS_A01Z01",
+            "FLOORS_A01Z01|mountain_floors_approach",
+            "FLOORS_A01Z01|mountain_floors_entrance"
+        ],
+        #vfloors: [
+            "ATV_FLOORS_A01Z01",
+            "ATV_FLOORS_A01Z01|checkpoint2_racetrackFloors_entrance"
+        ],
+        #vfly: [],
+        #walls: [
+            "WALLS_A01Z01",
+            "WALLS_A01Z01|mountain_tunnelWalls_entrance",
+            "WALLS_A01Z01|mountain_tunnelWallsUnderwater_entrance",
+            "WALLS_A01Z01|checkpoint2_racetrackWalls_entrance"
+        ],
+        #walls_nc: [
+            "WALLS_NONCAMERA_A01Z01",
+            "WALLS_NONCAMERA_A01Z01|mountain_railings_approach",
+            "WALLS_NONCAMERA_A01Z01|mountain_railings_approach|mountain_railings_approachShape",
+            "WALLS_NONCAMERA_A01Z01|mountain_railings_socket",
+            "WALLS_NONCAMERA_A01Z01|mountain_railings_socket|mountain_railings_socketShape",
+            "WALLS_NONCAMERA_A01Z01|checkpoint2_racetrackWalls_entranceInfinityCheat",
+            "WALLS_NONCAMERA_A01Z01|buoys"
+        ],
+        #ext: [
+            "W01L01A01Z01.w3d"
+        ]
+    ],
+    #Z02: [
+        #ROOT: "scene",
+        #add: [
             "|A01Z02",
             "FLOORS_A01Z02",
             "FLOORS_A01Z02|mountain_floors_approach",
@@ -458,15 +507,45 @@
             "directionalLight_fill4",
             "directionalLight_main",
             "directionalLight_under"
-        ], 
-        #rem: [], 
-        #floors: [], 
-        #vfloors: [], 
-        #vfly: [], 
-        #walls: [], 
-        #walls_nc: [], 
+        ],
+        #rem: [],
+        #floors: [
+            "FLOORS_A01Z02",
+            "FLOORS_A01Z02|mountain_floors_approach",
+            "FLOORS_A01Z02|mountain_floors_entrance",
+            "FLOORS_CHECKPOINTS_A01Z02"
+        ],
+        #vfloors: [
+            "ATV_FLOORS_A01Z02",
+            "ATV_FLOORS_A01Z02|checkpoint2_racetrackFloors_entrance",
+            "JETSKI_FLOORS_CHECKPOINTS_A01Z02",
+            "JETPACK_FLOORS_A01Z02"
+        ],
+        #vfly: [],
+        #walls: [
+            "WALLS_A01Z02",
+            "WALLS_A01Z02|mountainCavern2",
+            "WALLS_A01Z02|mountainCavern3",
+            "WALLS_A01Z02|mountain_tunnelWalls_entrance",
+            "WALLS_A01Z02|mountain_tunnelWallsUnderwater_entrance",
+            "WALLS_A01Z02|checkpoint2_racetrackWalls_entrance",
+            "WALLS_CHECKPOINTS_A01Z02",
+            "WALLS_CHECKPOINTS_A01Z02|checkpoint1a_walls",
+            "WALLS_CHECKPOINTS_A01Z02|checkpoint1a_sign",
+            "WALLS_CHECKPOINTS_A01Z02|checkpoint1b_walls",
+            "WALLS_CHECKPOINTS_A01Z02|checkpoint1b_sign"
+        ],
+        #walls_nc: [
+            "WALLS_NONCAMERA_A01Z02",
+            "WALLS_NONCAMERA_A01Z02|mountain_railings_approach",
+            "WALLS_NONCAMERA_A01Z02|mountain_railings_approach|mountain_railings_approachShape",
+            "WALLS_NONCAMERA_A01Z02|mountain_railings_socket",
+            "WALLS_NONCAMERA_A01Z02|mountain_railings_socket|mountain_railings_socketShape",
+            "WALLS_NONCAMERA_A01Z02|checkpoint2_racetrackWalls_entranceInfinityCheat",
+            "WALLS_NONCAMERA_A01Z02|buoys",
+            "WALLS_NONCAMERA_CHECKPOINTS_A01Z02"
+        ],
         #ext: [
-            "W01L01A01Z01.w3d",
             "W01L01A01Z02.w3d"
         ]
     ]

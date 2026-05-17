@@ -1,62 +1,142 @@
 [
     #nav: [
-        [1,2,"L01A01",3,4,5],
+        //the first option is a bit weird, might have been a "resume" button?
         [
             // Area name (to be used for translation)
-            "level1area2right",
-
-            // nav (image?) source
-            "navL01A01.jpg",
-
+            1,
+            // nav image source
+            2,
             // Nav Zone
-            "L01A02",
-
+            "L01A01",
             // Spawn position
-            vector(-1000, 30, -700),
-
+            vector(0,0,0),
+            //???
             4,
-
-            // Gem something
+            //Something with gems
             5
         ],
         [
-            // Area name (to be used for translation)
-            "level1area2left",
-
-            // nav (image?) source
+            "level1area1left",
             "navL01A01.jpg",
-
-            // Nav Zone
-            "L01A02",
-
-            // Spawn position
-            vector(414, -74, 124),
-
+            "L01A01",
+            vector(700, 450, -25),
             4,
-
-            // Gem something
+            5
+        ],
+        [
+            "level1area1right",
+            "navL01A01.jpg",
+            "L01A01",
+            vector(-1800, 80, -600),
+            4,
+            5
+        ],
+        [
+            "level1area2right",
+            "navL01A01.jpg",
+            "L01A02",
+            vector(-1800, 80, -600),
+            4,
+            5
+        ],
+        [
+            "level1area2left",
+            "navL01A01.jpg",
+            "L01A02",
+            vector(700, 450, -25),
+            4,
+            5
+        ],
+        [
+            "level1area3",
+            "navL01A01.jpg",
+            "L01A03",
+            vector(700, 450, -25),
+            4,
+            5
+        ],
+        [
+            "level1area4",
+            "navL01A01.jpg",
+            "L01A04",
+            vector(700, 450, -25),
+            4,
+            5
+        ],
+        [
+            "level1area5",
+            "navL01A01.jpg",
+            "L01A05",
+            vector(-1800, 80, -600),
+            4,
             5
         ],
         [
             "level2area1",
             "navL01A01.jpg",
             "L02A01",
-            vector(0, 0, 0),
+            vector(1000, 700, 600),
             4,
             5
         ],
-        [1,2,"L01A04",3,4,5],
-        [1,2,"L01A05",3,4,5]
+        [
+            "level2area2",
+            "navL01A01.jpg",
+            "L02A02",
+            vector(1000, 700, 600),
+            4,
+            5
+        ],
+        [
+            "level2area3",
+            "navL01A01.jpg",
+            "L02A03",
+            vector(1000, 700, 600),
+            4,
+            5
+        ],
+        [
+            "level2area4",
+            "navL01A01.jpg",
+            "L02A04",
+            vector(1000, 700, 600),
+            4,
+            5
+        ]
     ],
     // Property name translations
+    #level1area1right: [
+        #en: ["L1 A1 (Right)"]
+    ],
+    #level1area1left: [
+        #en: ["L1 A1 (Left)"]
+    ],
     #level1area2right: [
         #en: ["L1 A2 (Right)"]
     ],
     #level1area2left: [
         #en: ["L1 A2 (Left)"]
     ],
+    #level1area3: [
+        #en: ["L1 A3"]
+    ],
+    #level1area4: [
+        #en: ["L1 A4"]
+    ],
+    #level1area5: [
+        #en: ["L1 A5"]
+    ],
     #level2area1: [
         #en: ["L2 A1"]
+    ],
+    #level2area2: [
+        #en: ["L2 A2"]
+    ],
+    #level2area3: [
+        #en: ["L2 A3"]
+    ],
+    #level2area4: [
+        #en: ["L2 A4"]
     ],
     #lkill: [
         #en: ["Your connection has ended."]
@@ -65,19 +145,19 @@
         // scale and orig have not yet been correctly calibrated
         W01L01: [
             #img: "W01L01_map.jpg",
-            #scaleX: 5.0,
-            #scaleY: 5.0,
-            #origX: 0,
-            #origY: 0,
+            #scaleX: 11.0,
+            #scaleY: 11.0,
+            #origX: -100,
+            #origY: 125,
             #width: 700,
             #height: 700
         ],
         W01L02: [
             #img: "W01L02_map.jpg",
-            #scaleX: 5.0,
-            #scaleY: 5.0,
-            #origX: 0,
-            #origY: 0,
+            #scaleX: 9.0,
+            #scaleY: 9.0,
+            #origX: -50,
+            #origY: -170,
             #width: 700,
             #height: 1100
         ]
