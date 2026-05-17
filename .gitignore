@@ -1,0 +1,6 @@
+client/target
+client/me2_launcher/target
+client/me2hook/target
+handheld/me2_usb/target
+server/asset_server/me2_web/target
+server/game_server/me2_game_server/target
